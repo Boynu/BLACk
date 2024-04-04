@@ -1,7 +1,7 @@
 {
-    "name": "˹ᴠᴇɴᴏᴍ˼ ✘ ˹ᴍᴜsɪᴄ˼",
-    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://te.legra.ph/file/754e95311eccb48b7aafc.jpg",
+    "name": "˹ʙʟᴀᴄᴋ˼ ✘ ˹ᴍᴜsiᴄ˼",
+    "description": "Pyrogram və Py-Tgcalls ilə Python dilində yazılmış Telegram Musiqi Botu.",
+    "logo": "https://telegra.ph/file/91110965ee63afc161cad.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -13,32 +13,32 @@
     ],
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Bu dəyəri https://my.telegram.org saytından əldə edin",
         "value": "",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
+        "description": "Bu dəyəri https://my.telegram.org saytından əldə edin",
         "value": "",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
+        "description": "Botfather-dən Bot Tokeni",
         "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
-        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "description": "https://cloud.mongodb.com saytından mongodb url əldə edin.",
         "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id of user whom you would like to add as OWNER.",
-        "value": "5822700831",
+        "description": "SAHİB kimi əlavə etmək istədiyiniz istifadəçinin İD-si.",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram v2 String Session from @Venom_string_robot on Telegram.",
+        "description": "Telegram-da @Venom_string_robot-dan Pyrogram v2 String Sessiya.",
         "value": "",
         "required": true
       },
