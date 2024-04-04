@@ -23,9 +23,8 @@ from config import BANNED_USERS
 @language
 async def stats_global(client, message: Message, _):
     upl = stats_buttons(_, True if message.from_user.id in SUDOERS else False)
-    await message.reply_photo(
-        photo=config.STATS_IMG_URL,
-        caption=_["gstats_2"].format(app.mention),
+    await message.reply_text(
+        text=_["gstats_2"].format(app.mention),
         reply_markup=upl,
     )
 
@@ -67,8 +66,8 @@ async def overall_stats(client, CallbackQuery, _):
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
-        await CallbackQuery.message.reply_photo(
-            photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
+        await CallbackQuery.message.reply_text(
+            text=text, reply_markup=upl
         )
 
 
@@ -130,6 +129,6 @@ async def bot_stats(client, CallbackQuery, _):
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
     except MessageIdInvalid:
-        await CallbackQuery.message.reply_photo(
-            photo=config.STATS_IMG_URL, caption=text, reply_markup=upl
+        await CallbackQuery.message.reply_text(
+            text=text, reply_markup=upl
         )
